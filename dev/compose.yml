@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: movies_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+      POSTGRES_DB: movies
+    ports:
+      - "5435:5432"
